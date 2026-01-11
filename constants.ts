@@ -1,4 +1,4 @@
-import { Hand, CheckCircle, TrendingUp, User, Smartphone, Lock } from 'lucide-react';
+import { TrendingUp, User, Lock } from 'lucide-react';
 import { FAQItem, GuideStep } from './types';
 
 export const FAQ_ITEMS: FAQItem[] = [
