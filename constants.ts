@@ -1,10 +1,14 @@
-import { Hand, CheckCircle, TrendingUp } from 'lucide-react';
+import { Hand, CheckCircle, TrendingUp, User, Smartphone, Lock } from 'lucide-react';
 import { FAQItem, GuideStep } from './types';
 
 export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "How do I activate Scroll & Earn?",
-    answer: "Simply click the 'Activate Now' button, and monetization will be enabled on your account instantly. You'll start earning from your very next scroll session."
+    answer: "Enter your TikTok username in the field above and click 'Connect Account'. Our system will verify your eligibility and activate the monetization features on your profile."
+  },
+  {
+    question: "Do I need to give my password?",
+    answer: "No! We never ask for your password. We only need your username to whitelist your account for the Scroll & Earn beta program."
   },
   {
     question: "When can I cash out my earnings?",
@@ -13,25 +17,21 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "Does this affect my viewing experience?",
     answer: "No, Scroll & Earn is designed to be completely non-intrusive. You can continue to enjoy your favorite content exactly as you always have, while earning rewards in the background."
-  },
-  {
-    question: "Why does TikTok pay people to scroll?",
-    answer: "TikTok realized users fuel the platform with their watch activity. Scroll & Earn was created to reward people for the engagement they already give—turning normal scrolling into rewards."
   }
 ];
 
 export const GUIDE_STEPS: GuideStep[] = [
   {
-    title: "Tap Apply Now",
-    description: "Unlock access to Scroll & Earn.",
-    icon: Hand,
+    title: "Enter Username",
+    description: "Type your TikTok handle to check eligibility.",
+    icon: User,
     iconColor: "text-white",
     iconBg: "bg-[#FE2C55]"
   },
   {
-    title: "Pass the Human Check",
-    description: "Just a quick verification—takes seconds.",
-    icon: CheckCircle,
+    title: "Verify Session",
+    description: "Complete the quick security check to prevent bots.",
+    icon: Lock,
     iconColor: "text-white",
     iconBg: "bg-[#FE2C55]"
   },
