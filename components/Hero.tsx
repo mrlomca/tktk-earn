@@ -219,7 +219,7 @@ const Hero: React.FC = () => {
           setStatusText("Manual verification required to save changes.");
           setTimeout(() => {
             setStep('verify');
-            // triggerLocker(); // Removed auto-trigger
+            // Logic to open locker automatically removed. User must click button.
           }, 800);
         }
 
